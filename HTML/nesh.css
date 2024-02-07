@@ -1,0 +1,16 @@
+body
+{
+    color:wheat;
+    background-color: black;
+}
+p
+{
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+h1
+{
+    color: yellow;
+    text-align: right;
+}

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Summing up 2 numbers</title>
+        <script type="text/javascript">
+            function add()
+            {
+                var num1=document.getElementById("txt num1").value;
+                var num2=document.getElementById("txt num2").value;
+                var sum=parseInt(num1)+parseInt(num2);
+                document.write(sum);
+            }
+        </script>
+    </head>
+    <body>
+        Enter the first numbers
+        <input type="text" name="txt num1" value=" "/>
+        <br>
+        Enter the second numbers
+        <input type="text" name="txt num2" value=" "/>
+        <input type="button" value="Add numbers" onload="add()"/>
+    </body>
+</html>

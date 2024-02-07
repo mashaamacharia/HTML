@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Exam grading</title>
+    </head>
+    <body>
+        <div>
+            Enter CAT marks <br>
+            <input type="text" id="txtCAT"/><br>
+            Enter EXAM marks <br>
+            <input type="text" id="txtEXAM"/><br>
+            Total marks <br>
+            <input type="text" id="txtTotal"/><br>
+            pass/fail 
+            <input type="text" id="txtpassFail"/><br>
+            Grade <br>
+            <input type="button" value="results" onclick="marks()">
+        </div>
+        <script type="text/javascript">
+            function marks()
+            {
+                var CAT=document.getElementById("txtCAT").value;
+                var EXAM=document.getElementById("txtEXAM").value;
+                var Total=CAT+EXAM;
+                var remarks;
+                var Grade;
+                if(Grade>=40)
+                {
+                    remark="pass"
+                }
+                else
+                {
+                    remarks="fail"
+                }
+                if(Total>=70&&Total<=100)
+                {
+                    Grade="A";
+                }
+                else if(Total>=60&&Total<70){
+                    Grade="B";
+                }
+                else if(Total>=50&&Total<60){
+                    Grade="C"
+                }
+                else{
+                    Grade="Out of range";
+                }
+                document.getElementById("txtTotal").value=Total;
+                document.getElementById("txtpassFail").value=remarks;
+                document.getElementById("txtGrade").value=Grade;
+
+            }
+
+        </script>
+    </body>
+</html>
